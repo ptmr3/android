@@ -1,0 +1,16 @@
+This is the initial *expirimental* manifest. Sync AT YOUR OWN RISK 
+
+
+$ mkdir -p ~/bin
+$ mkdir -p ~/SOA
+
+$ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+
+$ export PATH=${PATH}:~/bin
+
+$ cd ~/SOA
+$ repo init -u git://github.com/SonsOfAndroid/android.git
+
+$ repo sync
+

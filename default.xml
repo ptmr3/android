@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com" />
+
+  <remote name="pt"	
+           fetch="git://github.com/ptmr3/" />
+           
+  <remote name="soa"
+           fetch="git://github.com/SonsOfAndroid/" />
+
+<project path="build" name="SonsOfAndroid/android_build">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="android" name="SonsOfAndroid/android" />
+
+  <project path="abi/cpp" name="SonsOfAndroid/android_abi_cpp" />
+  <project path="bionic" name="SonsOfAndroid/android_bionic" />
+  <project path="bootable/diskinstaller" name="SonsOfAndroid/android_bootable_diskinstaller" />
+  <project path="bootable/recovery" name="SonsOfAndroid/android_bootable_recovery" />
+  <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
+  <project path="dalvik" name="SonsOfAndroid/android_dalvik" />
+  <project path="development" name="SonsOfAndroid/android_development" />
+  <project path="device/common" name="SonsOfAndroid/android_device_common" />
+  <project path="device/generic/armv7-a-neon" name="SonsOfAndroid/android_device_generic_armv7-a-neon" />
+  <project path="device/generic/armv7-a" name="SonsOfAndroid/android_device_generic_armv7-a" />
+  <project path="device/generic/common" name="SonsOfAndroid/android_device_generic_common" />
+  <project path="device/generic/goldfish" name="SonsOfAndroid/android_device_generic_goldfish" />
+  <project path="device/generic/mips" name="SonsOfAndroid/android_device_generic_mips" />
+  <project path="device/generic/x86" name="SonsOfAndroid/android_device_generic_x86" />
+  <project path="device/google/accessory/arduino" name="SonsOfAndroid/android_device_google_accessory_arduino" groups="device" />
+  <project path="device/google/accessory/demokit" name="SonsOfAndroid/android_device_google_accessory_demokit" groups="device" />
+  <project path="device/sample" name="SonsOfAndroid/android_device_sample" groups="device" />
+  <project path="device/ti/panda" name="SonsOfAndroid/android_device_ti_panda" groups="device" />
+  <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
+  <project path="external" name="SonsOfAndroid/android_external" />
+  <project path="frameworks" name="SonsOfAndroid/android_frameworks" />
+  <project path="frameworks/av" name="SonsOfAndroid/android_frameworks_av" />
+  <project path="frameworks/base" name="SonsOfAndroid/android_frameworks_base" />
+  <project path="gdk" name="platform/gdk" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
+  <project path="hardware" name="SonsOfAndroid/android_hardware" />
+  <project path="libcore" name="SonsOfAndroid/android_libcore" />
+  <project path="libnativehelper" name="SonsOfAndroid/android_libnativehelper" />
+  <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
+  <project path="packages" name="SonsOfAndroid/android_packages" />
+  <project path="pdk" name="platform/pdk" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
+  <project path="prebuilt" name="SonsOfAndroid/android_prebuilt" />
+  <project path="prebuilts" name="android_prebuilts" />
+
+  <project path="sdk" name="SonsOfAndroid/android_sdk" />
+  <project path="system" name="SonsOfAndroid/android_system" />
+  <project path="tools/build" name="platform/tools/build" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
+  <project path="tools/motodev" name="platform/tools/motodev" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
+  <project path="vendor" name="SonsOfAndroid/android_vendor" />
